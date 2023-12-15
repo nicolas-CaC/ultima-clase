@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('partials/head', title) %>
+
+<body>
+    <% let total = 0 %>
+
+    <% products.forEach(product => { %>
+    <div><%= product.nombre %></div>
+    <% total += product.precio %>
+    <% }) %>
+
+    <div><b>Total: <%= total %></b></div>
+</body>
+
+</html>
